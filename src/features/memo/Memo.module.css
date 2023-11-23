@@ -1,0 +1,112 @@
+.model_wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+
+.container{
+    position: fixed;
+    left: 17.5%;
+    top: 9%;
+    width: 82.5%;
+    height: 100%;
+}
+
+.div_span{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.div_content{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.div_tags{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+.div_tag{
+    margin: 3px 5px 0px 5px;
+    border: 0.5px solid black;
+    border-radius: 3px;
+    padding: 1px 5px 1px 5px;
+}
+.input{
+    width: 90%;
+}
+.button_sort{
+    align-self: flex-end;
+    margin-right: 5%;
+}
+.button_LittleMemoPin{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0.5px solid black;
+    border-radius: 3px;
+}
+.div_Notes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.span_MemoContainerSortPin{
+    font-weight: 500;
+    font-size: large;
+    justify-self: start;
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.div_Note{
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.div_backgroundcolor_white{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: 0.5px solid black;
+    color: black;
+}
+.div_backgroundcolor_red{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+.div_backgroundcolor_green{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+.div_backgroundcolor_blue{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+.div_LittleMemoTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.span_LittleMemoContent{
+    width: 100%;
+    height: 50px;
+}

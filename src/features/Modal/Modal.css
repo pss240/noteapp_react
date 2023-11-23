@@ -1,0 +1,166 @@
+.modal {
+    position: relative;
+    width: 60%;
+    height: 50%;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    background: white;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: all 400ms ease-in-out 2s;
+    animation: fadeIn 400ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .modal {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .wrapper-modal {
+    position: fixed;
+    inset: 0px;
+    background-color: rgb(0 0 0 / 71%);
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .presentation {
+    z-index: 1200;
+    position: absolute;
+  }
+  .modal-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .ul_backgroundColor{
+    list-style: none;
+  }
+  .div_memoDetail{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  .div_addedTags{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+  }
+  .div_tag2{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 3px;
+    background-color: aqua;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn_tag{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .input_title{
+    width: 100%;
+    height: 20px;
+  }
+  .div_title{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .div_textarea{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #default_textarea{
+    width: 100%;
+    height: 180px;
+    background-color: white;
+  }
+  .input_textarea_white{
+    width: 100%;
+    height: 180px;
+    background-color: white;
+  }
+  .input_textarea_red{
+    width: 100%;
+    height: 180px;
+    background-color: red;
+  }
+  .input_textarea_blue{
+    width: 100%;
+    height: 180px;
+    background-color: blue;
+  }
+  .input_textarea_green{
+    width: 100%;
+    height: 180px;
+    background-color: green;
+  }
+  .button_submit{
+    
+  }
+  .div_submit{
+    align-self: flex-end;
+  }
+  .div_modalTitle{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 5px;
+  }
+  @media screen and (max-height: 768px) {
+    .wrapper-modal {
+      align-items: unset;
+      padding-top: 2rem;
+    }
+    .modal {
+      overflow-y: scroll;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .modal__overview {
+      font-size: 16px;
+    }
+    .modal__details {
+      font-size: 16px;
+    }
+    .wrapper-modal {
+      padding: 0;
+    }
+    .modal {
+      overflow-y: scroll !important;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

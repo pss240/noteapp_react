@@ -1,9 +1,12 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
-
+import navReducer from '../features/nav/navSlice'
+import selectedTagReducer from '../features/nav/selectedTagSlice'
+import memoReducer from '../features/memo/memoSlice';
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    nav: navReducer,
+    selectedTag:selectedTagReducer,
+    memo:memoReducer,
   },
 });
 
